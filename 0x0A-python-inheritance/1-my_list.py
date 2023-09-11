@@ -2,7 +2,7 @@
 """Defines an inherited list class MyList."""
 
 
-def MyList(list):
+class MyList(list):
     """Defs a func that prints out sorted ints 
     for built-in list class"""
 
