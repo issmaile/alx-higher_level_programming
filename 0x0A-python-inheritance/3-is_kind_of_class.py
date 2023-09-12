@@ -2,7 +2,7 @@
 """Defines a """
 
 
-def is_kind_of_class(self, a_class):
+def is_kind_of_class(obj, a_class):
     """ asdasfasfd
 
     Args:
