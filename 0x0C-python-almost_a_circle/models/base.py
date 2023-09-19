@@ -14,7 +14,7 @@ class Base:
         __nb_objects (int): Num of instantiated base
     """
 
-    __np_objects = 0
+    __nb_objects = 0
 
     def __init__(self, id=None):
         """Inits a new Base
@@ -50,9 +50,9 @@ class Base:
         with open(filename, "w") as jf:
             if list_objs is None:
                 jf.write("[]")
-            else
-            list_dicts = [o.to_dictionary() for o in list_objs]
-            jsonfile.write(Base.to_json_string(list_dicts))
+            else:
+                list_dicts = [o.to_dictionary() for o in list_objs]
+                jsonfile.write(Base.to_json_string(list_dicts))
 
     @staticmethod
     def from_json_string(json_string):
