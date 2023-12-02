@@ -6,7 +6,7 @@ import requests
 
 
 if __name__ == "__main__":
-    u   = sys.argv[1]
+    u = sys.argv[1]
 
     req = requests.get(u)
     if req.status_code >= 400:
