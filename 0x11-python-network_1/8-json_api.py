@@ -2,11 +2,12 @@
 """sends POST request to http://0.0.0.0:5000/search_user
 - with a letter as a param
 """
-import sys
-import requests
 
 
 if __name__ == "__main__":
+    import sys
+    import requests
+
     letter = sys.argv[1] if len(sys.argv) != 1 else ""
     payload = {"q": letter}
 
