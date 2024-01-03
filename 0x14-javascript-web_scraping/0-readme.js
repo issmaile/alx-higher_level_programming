@@ -1,7 +1,9 @@
 #!/usr/bin/node
 const fs = require('fs');
-const file = process.argv[2];
-const data = fs.readFile(file, 'utf8', function(err, cont) {
-	console.log(err || cont);
-});
-console.log(data);
+try {
+	const data = fs.readFileSync(process.argv[2], 'utf8');
+	console.log(data);
+}
+catch (err) {
+	console.log(err);
+}
