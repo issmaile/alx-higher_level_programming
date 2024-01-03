@@ -8,6 +8,7 @@ request(url, { json: true }, (err, resp, body) => {
   for (const character of body.characters) {
     request(character, { json: true }, (errr, ress, bodyy) => {
       if (errr) throw (errr);
-      console.log(body.name);
+      console.log(bodyy.name);
     });
+  }
 });
