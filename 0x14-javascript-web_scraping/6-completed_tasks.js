@@ -2,7 +2,7 @@
 const req = require('request');
 const url = process.argv[2];
 
-req(url, (err, resp, body) => {
+req(url, { json: true }, (err, resp, body) => {
   if (err) throw (err);
   const users = {};
   for (const task of body) {
